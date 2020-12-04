@@ -1,0 +1,47 @@
+@import "../../styles/utilities";
+
+.navbar {
+  padding: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  z-index: 2;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  background-color: #443d4f;
+  align-items: center;
+  border-bottom: 3px solid cyan;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.logo {
+  flex: 1;
+}
+
+ul {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  padding-left: 5%;
+
+  li {
+    padding: 0 3rem;
+
+    a {
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

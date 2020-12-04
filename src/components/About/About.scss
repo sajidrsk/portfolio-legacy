@@ -1,0 +1,29 @@
+.about {
+  text-align: center;
+  padding-top: 5.7rem;
+
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #666666;
+    display: block;
+  }
+
+  &-img-skills {
+    display: flex;
+    padding: 4rem 2rem;
+  }
+
+  &-imgDetail {
+    flex: 1;
+    img {
+      width: 250px;
+      border-radius: 40%;
+    }
+  }
+
+  &-skills {
+    flex: 1;
+    width: 20%;
+  }
+}
