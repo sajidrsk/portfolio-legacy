@@ -1,5 +1,7 @@
 import React from "react";
 import { Container } from "@material-ui/core";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "./About.scss";
 import ProgressBar from "../UI/ProgressBar/ProgressBar";
@@ -37,11 +39,19 @@ const skills = [
 ];
 
 function About() {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <section id="about" className="about">
       <Container>
-        <span className="head">About</span>
-        <div className="about-img-skills">
+        <span className="head" data-aos="fade-right">
+          About
+        </span>
+        <div className="about-img-skills" data-aos="fade-right">
           <div className="about-imgDetail">
             <img alt="not available" src={Potrait} />
             <span className="about-title">Who am I?</span>
@@ -51,7 +61,7 @@ function About() {
               dynamic user experiences. Let's make something special.
             </p>
           </div>
-          <div className="about-skills">
+          <div className="about-skills" data-aos="fade-left">
             {skills.map((skill, idx) => {
               return (
                 <ProgressBar

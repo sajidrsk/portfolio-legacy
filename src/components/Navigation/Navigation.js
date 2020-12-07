@@ -5,7 +5,7 @@ import "./Navigation.scss";
 function Navigation() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > window.innerHeight + 80) {
+      if (window.scrollY > window.innerHeight) {
         document.querySelector(".navbar").classList.add("sticky");
       } else {
         document.querySelector(".navbar").classList.remove("sticky");

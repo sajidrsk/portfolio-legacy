@@ -9,8 +9,8 @@ const projectData = [
     id: 1,
     name: "Kitchen Recipe App",
     tech: ["html", "css", "javascript", "react"],
-    demo: "https://sajid-kitchen-recipe.netlify.app/",
-    imgUrl:
+    demoURL: "https://sajid-kitchen-recipe.netlify.app/",
+    imgURL:
       "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
     desc: "Create Your Own Kitchen Recipe and Store On Local Storage",
   },
@@ -18,8 +18,8 @@ const projectData = [
     id: 2,
     name: "Github Profile Finder",
     tech: ["html", "css", "javascript", "react"],
-    demo: "https://sajid-react-githubapi.netlify.app/",
-    imgUrl:
+    demoURL: "https://sajid-react-githubapi.netlify.app/",
+    imgURL:
       "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
     desc: "Find and View Github Reposotories",
   },
@@ -27,8 +27,8 @@ const projectData = [
     id: 3,
     name: "Bitcoin Monitor App",
     tech: ["react", "material-ui"],
-    demo: "https://sajid-react-bitcoin.netlify.app/",
-    imgUrl:
+    demoURL: "https://sajid-react-bitcoin.netlify.app/",
+    imgURL:
       "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
     desc: "Monitor bitcoin prices in USD, GBP and EUR",
   },
@@ -36,8 +36,8 @@ const projectData = [
     id: 4,
     name: "To-Do App",
     tech: ["html", "css", "javascript"],
-    demo: "https://google.co.in",
-    imgUrl:
+    demoURL: "https://google.co.in",
+    imgURL:
       "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
     desc: "Create and Manage Your task with To-Do list",
   },
@@ -45,8 +45,8 @@ const projectData = [
     id: 5,
     name: "Burger Builder",
     tech: ["html", "css", "javascript", "react"],
-    demo: "https://google.co.in",
-    imgUrl:
+    demoURL: "https://google.co.in",
+    imgURL:
       "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
     desc: "Build Burger and Order Now",
   },
@@ -54,8 +54,8 @@ const projectData = [
     id: 6,
     name: "Notes App",
     tech: ["html", "css", "javascript"],
-    demo: "https://google.co.in",
-    imgUrl:
+    demoURL: "https://google.co.in",
+    imgURL:
       "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
     desc: "Take Notes and Never Forget anything",
   },
@@ -63,8 +63,8 @@ const projectData = [
     id: 7,
     name: "Newsgrid",
     tech: ["html", "css"],
-    demo: "https://google.co.in",
-    imgUrl:
+    demoURL: "https://google.co.in",
+    imgURL:
       "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
     desc: "Find Latest News and Stay up to date with This fast paced world",
   },
@@ -72,8 +72,8 @@ const projectData = [
     id: 8,
     name: "Portfolio Website",
     tech: ["html", "css"],
-    demo: "https://google.co.in",
-    imgUrl:
+    demoURL: "https://google.co.in",
+    imgURL:
       "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
     desc: "Portfolio website for graphics designers & Professional Shooters",
   },
@@ -81,8 +81,8 @@ const projectData = [
     id: 9,
     name: "Edge Ledger Website",
     tech: ["html", "css"],
-    demo: "https://google.co.in",
-    imgUrl:
+    demoURL: "https://google.co.in",
+    imgURL:
       "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
     desc: "Hoter Website for Your Business",
   },
