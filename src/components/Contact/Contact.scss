@@ -1,5 +1,11 @@
+@import "../../styles/utilities";
+
 .contact {
   text-align: center;
+  padding-top: 5rem;
+  margin-top: 3rem;
+  color: #fff;
+  // background-color: $dark-background;
 
   form {
     display: flex;
@@ -7,9 +13,6 @@
     align-items: center;
     justify-content: center;
     padding: 5rem;
-
-    input {
-      //   margin: 10px;
-    }
+    color: #fff;
   }
 }

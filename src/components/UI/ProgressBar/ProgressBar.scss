@@ -1,22 +1,21 @@
 .progress {
   padding: 1rem;
-
-  text-align: right;
-  // border: 1px solid #333;
   display: flex;
 
   &name {
+    border-radius: 5px 0 0 5px;
     font-size: 1rem;
-    height: 20px;
-    background: lightblue;
+    height: 24px;
+    background: #a5ecd7;
     text-align: center;
-    flex: 1;
+    flex: 2;
   }
 
   &bar {
+    border-radius: 0 5px 5px 0;
     overflow: hidden;
-    height: 20px;
-    background: lightskyblue;
+    height: 24px;
+    background: lightgrey;
     // border-radius: 5px;
     margin-bottom: 0.6rem;
     flex: 9;
@@ -25,7 +24,7 @@
       height: 100%;
       color: #fff;
       text-align: center;
-      background: blue;
+      background: #0278ae;
     }
   }
 }

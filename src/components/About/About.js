@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "@material-ui/core";
 
 import "./About.scss";
 import ProgressBar from "../UI/ProgressBar/ProgressBar";
@@ -37,27 +38,33 @@ const skills = [
 
 function About() {
   return (
-    <div id="about" className="about">
-      <span className="head">About</span>
-      <div className="about-img-skills">
-        <div className="about-imgDetail">
-          <img alt="not available" src={Potrait} />
-          <span className="about-title">Who's This Guy</span>
-          <p>
-            I'm a Front-End Developer for ChowNow in Los Angeles, CA. I have
-            serious passion for UI effects, animations and creating intuitive,
-            dynamic user experiences. Let's make something special.
-          </p>
+    <section id="about" className="about">
+      <Container>
+        <span className="head">About</span>
+        <div className="about-img-skills">
+          <div className="about-imgDetail">
+            <img alt="not available" src={Potrait} />
+            <span className="about-title">Who am I?</span>
+            <p>
+              I'm a Front-End Developer for ChowNow in Los Angeles, CA. I have
+              serious passion for UI effects, animations and creating intuitive,
+              dynamic user experiences. Let's make something special.
+            </p>
+          </div>
+          <div className="about-skills">
+            {skills.map((skill, idx) => {
+              return (
+                <ProgressBar
+                  key={idx}
+                  name={skill.name}
+                  rating={skill.rating}
+                />
+              );
+            })}
+          </div>
         </div>
-        <div className="about-skills">
-          {skills.map((skill, idx) => {
-            return (
-              <ProgressBar key={idx} name={skill.name} rating={skill.rating} />
-            );
-          })}
-        </div>
-      </div>
-    </div>
+      </Container>
+    </section>
   );
 }
 

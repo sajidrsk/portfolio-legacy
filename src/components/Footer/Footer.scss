@@ -1,0 +1,16 @@
+@import "../../styles/utilities";
+
+.footer {
+  padding: 2rem 0;
+  background-color: $mid-dark;
+  text-align: center;
+
+  svg {
+    transition: transform 300ms ease-in-out;
+    transform: scale(2);
+
+    &:hover {
+      transform: scale(2.5);
+    }
+  }
+}

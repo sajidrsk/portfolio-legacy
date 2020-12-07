@@ -1,24 +1,26 @@
 import React from "react";
-import { Container } from "@material-ui/core";
 
 import "./App.scss";
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 function App() {
+  React.useEffect(() => {
+    alert("This Project is not complete yet");
+  }, []);
   return (
     <>
       <Home />
-      <Container>
-        <Navigation />
-        <About />
-        <Portfolio />
-        <Contact />
-      </Container>
+      {/* <Container> */}
+      <Navigation />
+      <About />
+      <Projects />
+      <Contact />
+      {/* </Container> */}
       <Footer />
     </>
   );

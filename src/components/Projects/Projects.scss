@@ -1,5 +1,10 @@
-.portfolio {
+@import "../../styles/utilities";
+
+.project-div {
   text-align: center;
+  padding-top: 5rem;
+  margin-top: 3rem;
+  background-color: #f4f4f4;
 }
 
 .projects {
@@ -13,6 +18,10 @@
       background: transparent;
       border: none !important;
       outline: none;
+      padding: 0.8rem 1.5rem;
+      color: #fff;
+      margin: 2rem 0 1rem 0;
+      background-color: $primary-color;
 
       &:hover {
         cursor: pointer;
@@ -21,11 +30,12 @@
   }
 
   &-cards-group {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 
     .project-card {
-      padding: 5rem;
+      padding: 10rem 3rem;
       border: 1px solid #333;
     }
   }
