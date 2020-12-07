@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container } from "@material-ui/core";
 
 import "./Projects.scss";
+import Card from "../UI/Card/Card";
 
 const projectData = [
   {
@@ -9,54 +10,81 @@ const projectData = [
     name: "Kitchen Recipe App",
     tech: ["html", "css", "javascript", "react"],
     demo: "https://sajid-kitchen-recipe.netlify.app/",
+    imgUrl:
+      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    desc: "Create Your Own Kitchen Recipe and Store On Local Storage",
   },
   {
     id: 2,
     name: "Github Profile Finder",
     tech: ["html", "css", "javascript", "react"],
     demo: "https://sajid-react-githubapi.netlify.app/",
+    imgUrl:
+      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    desc: "Find and View Github Reposotories",
   },
   {
     id: 3,
     name: "Bitcoin Monitor App",
     tech: ["react", "material-ui"],
     demo: "https://sajid-react-bitcoin.netlify.app/",
+    imgUrl:
+      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    desc: "Monitor bitcoin prices in USD, GBP and EUR",
   },
   {
     id: 4,
     name: "To-Do App",
     tech: ["html", "css", "javascript"],
     demo: "https://google.co.in",
+    imgUrl:
+      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    desc: "Create and Manage Your task with To-Do list",
   },
   {
     id: 5,
     name: "Burger Builder",
     tech: ["html", "css", "javascript", "react"],
     demo: "https://google.co.in",
+    imgUrl:
+      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    desc: "Build Burger and Order Now",
   },
   {
     id: 6,
     name: "Notes App",
     tech: ["html", "css", "javascript"],
     demo: "https://google.co.in",
+    imgUrl:
+      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    desc: "Take Notes and Never Forget anything",
   },
   {
     id: 7,
     name: "Newsgrid",
     tech: ["html", "css"],
     demo: "https://google.co.in",
+    imgUrl:
+      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    desc: "Find Latest News and Stay up to date with This fast paced world",
   },
   {
     id: 8,
     name: "Portfolio Website",
     tech: ["html", "css"],
     demo: "https://google.co.in",
+    imgUrl:
+      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    desc: "Portfolio website for graphics designers & Professional Shooters",
   },
   {
     id: 9,
     name: "Edge Ledger Website",
     tech: ["html", "css"],
     demo: "https://google.co.in",
+    imgUrl:
+      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    desc: "Hoter Website for Your Business",
   },
 ];
 
@@ -90,9 +118,10 @@ function Portfolio() {
           </div>
           <div className="projects-cards-group">
             {projects.map((project, idx) => (
-              <div key={project.id} className="project-card">
-                {project.name}
-              </div>
+              <Card key={project.id} project={project} />
+              // <div key={project.id} className="project-card">
+              //   {project.name}
+              // </div>
             ))}
           </div>
         </div>
