@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "@material-ui/core";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "./Projects.scss";
 import Card from "../UI/Card/Card";
@@ -92,6 +94,13 @@ function Portfolio() {
   const [projects, setProjects] = useState(projectData);
   // const [projectStyle, setProjectStyle] = useState();
 
+  React.useEffect(() => {
+    AOS.init({
+      duration: 500,
+      offset: 150,
+    });
+  }, []);
+
   const projectFilter = (type) => {
     if (type === "all") {
       setProjects(projectData);
@@ -109,19 +118,25 @@ function Portfolio() {
         <span className="head">Projects</span>
         <div className="projects">
           <div className="projects-btn">
-            <button onClick={() => projectFilter("all")}>All</button>
-            <button onClick={() => projectFilter("html")}>HTML/CSS</button>
-            <button onClick={() => projectFilter("javascript")}>
+            <button onClick={() => projectFilter("all")} data-aos="fade-right">
+              All
+            </button>
+            <button onClick={() => projectFilter("html")} data-aos="fade-right">
+              HTML/CSS
+            </button>
+            <button
+              onClick={() => projectFilter("javascript")}
+              data-aos="fade-left"
+            >
               Javascript
             </button>
-            <button onClick={() => projectFilter("react")}>React</button>
+            <button onClick={() => projectFilter("react")} data-aos="fade-left">
+              React
+            </button>
           </div>
           <div className="projects-cards-group">
-            {projects.map((project, idx) => (
+            {projects.map((project) => (
               <Card key={project.id} project={project} />
-              // <div key={project.id} className="project-card">
-              //   {project.name}
-              // </div>
             ))}
           </div>
         </div>

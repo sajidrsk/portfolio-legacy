@@ -41,7 +41,8 @@ const skills = [
 function About() {
   React.useEffect(() => {
     AOS.init({
-      duration: 1000,
+      offset: 150,
+      duration: 1500,
     });
   }, []);
 
@@ -51,8 +52,8 @@ function About() {
         <span className="head" data-aos="fade-right">
           About
         </span>
-        <div className="about-img-skills" data-aos="fade-right">
-          <div className="about-imgDetail">
+        <div className="about-img-skills">
+          <div className="about-imgDetail" data-aos="fade-right">
             <img alt="not available" src={Potrait} />
             <span className="about-title">Who am I?</span>
             <p>

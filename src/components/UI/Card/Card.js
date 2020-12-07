@@ -10,7 +10,7 @@ function Card(props) {
 
   React.useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
     });
   }, []);
 
@@ -40,7 +40,7 @@ function Card(props) {
     </div>
   );
   return (
-    <div className="project-card" data-aos="fade-up">
+    <div className="project-card" data-aos="flip-down">
       {cards}
     </div>
   );
