@@ -3,7 +3,8 @@
 .navbar {
   padding: 1.7rem;
   display: flex;
-  justify-content: center;
+
+  justify-content: space-around;
   align-items: center;
   height: 2rem;
   z-index: 2;
@@ -13,12 +14,40 @@
   width: 100%;
   background-color: $mid-dark;
   border-bottom: 3px solid cyan;
+
   // animation-direction: reverse;
 
-  .logo {
+  .logoflex {
     flex: 1;
-    color: #fff;
-    cursor: pointer;
+    .logo {
+      // float: left;
+      // align-self: flex-start;
+      font-weight: bolder;
+      font-size: 1.7rem;
+      cursor: pointer;
+      background: -webkit-linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .links {
+    flex: 1;
+    // margin-left: 20%;
+    // float: right;
+    // justify-self: flex-end;
+    a {
+      padding: 0 3rem;
+      color: #fff;
+      transition: all 250ms ease-in-out;
+
+      &:hover {
+        color: $primary-color;
+      }
+      &.active {
+        color: $primary-color !important;
+      }
+    }
   }
 
   &.sticky {
@@ -39,16 +68,6 @@
         // opacity: 1;
         top: 0px;
       }
-    }
-  }
-
-  a {
-    padding: 0 3rem;
-    color: #fff;
-    transition: all 250ms ease-in-out;
-
-    &:hover {
-      color: $primary-color;
     }
   }
 }
@@ -74,7 +93,3 @@
 //     }
 //   }
 // }
-
-a.active {
-  color: $primary-color !important;
-}

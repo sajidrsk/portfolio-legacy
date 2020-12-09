@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Container } from "@material-ui/core";
 
 import "./Navigation.scss";
 
@@ -20,10 +21,12 @@ function Navigation() {
 
   return (
     <div className="navbar">
-      <span className="logo" onClick={() => scroll.scrollToTop()}>
-        Logo
-      </span>
-      <div>
+      <div className="logoflex">
+        <span className="logo" onClick={() => scroll.scrollToTop()}>
+          Sajid
+        </span>
+      </div>
+      <div className="links">
         <Link activeClass="active" to="home" smooth spy>
           Home
         </Link>
