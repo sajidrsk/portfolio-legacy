@@ -60,6 +60,6 @@
 //   }
 // }
 
-.active {
-  color: $primary-color;
+a.active {
+  color: $primary-color !important;
 }
