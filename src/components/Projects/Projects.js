@@ -5,6 +5,9 @@ import "aos/dist/aos.css";
 
 import "./Projects.scss";
 import Card from "../UI/Card/Card";
+import githubProjectIMG from "../../assets/github-finder.JPG";
+import recipeProjectIMG from "../../assets/recipe-app.PNG";
+import bitcoinProjectIMG from "../../assets/bitcoin-monitor.JPG";
 
 const projectData = [
   {
@@ -12,8 +15,7 @@ const projectData = [
     name: "Kitchen Recipe App",
     tech: ["html", "css", "javascript", "react"],
     demoURL: "https://sajid-kitchen-recipe.netlify.app/",
-    imgURL:
-      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    imgURL: recipeProjectIMG,
     desc: "Create Your Own Kitchen Recipe and Store On Local Storage",
   },
   {
@@ -21,8 +23,7 @@ const projectData = [
     name: "Github Profile Finder",
     tech: ["html", "css", "javascript", "react"],
     demoURL: "https://sajid-react-githubapi.netlify.app/",
-    imgURL:
-      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    imgURL: githubProjectIMG,
     desc: "Find and View Github Reposotories",
   },
   {
@@ -30,8 +31,7 @@ const projectData = [
     name: "Bitcoin Monitor App",
     tech: ["react", "material-ui"],
     demoURL: "https://sajid-react-bitcoin.netlify.app/",
-    imgURL:
-      "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    imgURL: bitcoinProjectIMG,
     desc: "Monitor bitcoin prices in USD, GBP and EUR",
   },
   {

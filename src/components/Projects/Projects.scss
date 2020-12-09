@@ -4,7 +4,8 @@
   text-align: center;
   padding-top: 5rem;
   margin-top: 3rem;
-  background-color: #f4f4f4;
+  background-color: #e1e1e1;
+  padding-bottom: 3rem;
 }
 
 .projects {
@@ -21,7 +22,8 @@
       padding: 0.5rem 1.5rem;
       color: #fff;
       margin: 2rem 0 1rem 0;
-      background-color: $primary-color;
+      transition: all 1s ease-in-out;
+      background-color: $mid-dark;
 
       &:hover {
         cursor: pointer;
@@ -33,10 +35,5 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-
-    // .project-card {
-    //   padding: 10rem 3rem;
-    //   border: 1px solid #333;
-    // }
   }
 }

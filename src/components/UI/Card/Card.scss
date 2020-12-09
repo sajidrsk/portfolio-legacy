@@ -1,8 +1,11 @@
+@import "../../../styles/utilities";
+
 .project-card {
   //   padding: 10rem 3rem;
   //   border: 1px solid #333;
   transition: all 500ms ease-in-out;
   color: #fff;
+  // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 // base
@@ -61,13 +64,14 @@
   > .front,
   > .back {
     display: block;
-    color: white;
+    color: $primary-color;
     width: inherit;
     background-size: cover !important;
     background-position: center !important;
     height: 220px;
     padding: 1em 2em;
     background: #313131;
+
     border-radius: 10px;
     p {
       font-size: 0.9125rem;

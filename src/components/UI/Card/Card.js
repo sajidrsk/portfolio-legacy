@@ -21,10 +21,9 @@ function Card(props) {
         style={{
           backgroundImage: `url(${project.imgURL.replace(/^"(.*)"$/, "$1")})`,
         }}
-      >
-        <h1 class="text-shadow">{project.name}</h1>
-      </div>
+      ></div>
       <div class="back">
+        <h1 class="text-shadow">{project.name}</h1>
         <h2>{project.tech.join(", ")}</h2>
         <p>{project.desc}</p>
         <Button

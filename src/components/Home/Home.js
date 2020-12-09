@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowDownward as ArrowDownwardIcon } from "@material-ui/icons";
 import { Container } from "@material-ui/core";
+import { Link } from "react-scroll";
 
 import "./Home.scss";
 
@@ -13,10 +14,10 @@ function Home() {
         </h1>
         <p className="home-desc">I'm a software developer.</p>
         <span className="home-work-btn">
-          <a href="#projects">
+          <Link to="projects" smooth>
             View My Work
             <ArrowDownwardIcon />
-          </a>
+          </Link>
         </span>
       </Container>
     </header>
