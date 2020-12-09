@@ -6,9 +6,13 @@ import "./Navigation.scss";
 function Navigation() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > window.innerHeight) {
+      if (window.scrollY > window.innerHeight + 47) {
         document.querySelector(".navbar").classList.add("sticky");
+        document.querySelector(".navbar").classList.add("fadeInDown");
+      } else if (window.scrollY > window.innerHeight) {
+        // Do Nothing
       } else {
+        document.querySelector(".navbar").classList.remove("fadeInDown");
         document.querySelector(".navbar").classList.remove("sticky");
       }
     });

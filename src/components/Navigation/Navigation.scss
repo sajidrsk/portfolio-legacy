@@ -22,9 +22,24 @@
   }
 
   &.sticky {
-    // transition: all 500ms ease-in-out;
     position: fixed;
     top: 0;
+  }
+
+  &.fadeInDown {
+    animation: fadeInDown 1s ease-in-out;
+    animation-fill-mode: both;
+
+    @keyframes fadeInDown {
+      0% {
+        // opacity: 0;
+        top: -100px;
+      }
+      100% {
+        // opacity: 1;
+        top: 0px;
+      }
+    }
   }
 
   a {
