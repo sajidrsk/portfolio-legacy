@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Container } from "@material-ui/core";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import "./Projects.scss";
 import Card from "../UI/Card/Card";
+import Container from "../UI/Container/Container";
 import githubProjectIMG from "../../assets/github-finder.JPG";
 import recipeProjectIMG from "../../assets/recipe-app.PNG";
 import bitcoinProjectIMG from "../../assets/bitcoin-monitor.JPG";

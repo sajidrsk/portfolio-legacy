@@ -1,9 +1,9 @@
 import React from "react";
-import { Container } from "@material-ui/core";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import "./About.scss";
+import Container from "../UI/Container/Container";
 import ProgressBar from "../UI/ProgressBar/ProgressBar";
 import Potrait from "../../assets/69902898.webp";
 

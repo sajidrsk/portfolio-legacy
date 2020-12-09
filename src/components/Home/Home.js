@@ -1,9 +1,9 @@
 import React from "react";
 import { ArrowDownward as ArrowDownwardIcon } from "@material-ui/icons";
-import { Container } from "@material-ui/core";
 import { Link } from "react-scroll";
 
 import "./Home.scss";
+import Container from "../UI/Container/Container";
 
 function Home() {
   return (

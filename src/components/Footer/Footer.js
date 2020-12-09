@@ -2,9 +2,9 @@ import React from "react";
 import { IconButton as IconBTN } from "@material-ui/core";
 import { LinkedIn, Instagram, GitHub, YouTube } from "@material-ui/icons";
 import { withStyles } from "@material-ui/core/styles";
-import { Container } from "@material-ui/core";
 
 import "./Footer.scss";
+import Container from "../UI/Container/Container";
 
 const IconButton = withStyles({
   root: {
