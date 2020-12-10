@@ -1,5 +1,4 @@
 import React from "react";
-import { ArrowDownward as ArrowDownwardIcon } from "@material-ui/icons";
 import { Link } from "react-scroll";
 
 import "./Home.scss";
@@ -16,7 +15,6 @@ function Home() {
         <span className="home-work-btn">
           <Link to="projects" smooth>
             View My Work
-            <ArrowDownwardIcon />
           </Link>
         </span>
       </Container>

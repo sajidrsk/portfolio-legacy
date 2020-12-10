@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "@material-ui/core";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -26,15 +25,13 @@ function Card(props) {
         <h1 class="text-shadow">{project.name}</h1>
         <h2>{project.tech.join(", ")}</h2>
         <p>{project.desc}</p>
-        <Button
-          variant="contained"
-          color="secondary"
+        <button
           onClick={() => {
             window.open(`${project.demoURL.replace(/^"(.*)"$/, "$1")}`);
           }}
         >
           Demo
-        </Button>
+        </button>
       </div>
     </div>
   );
